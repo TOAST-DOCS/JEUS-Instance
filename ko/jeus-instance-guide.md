@@ -1,5 +1,6 @@
-## JEUS Instance 생성
+# Application Service > JEUS Instance > 사용 가이드
 
+## JEUS Instance 생성
 
 JEUS를 사용하려면 먼저 인스턴스를 생성해야 합니다.
 
@@ -10,8 +11,8 @@ JEUS를 사용하려면 먼저 인스턴스를 생성해야 합니다.
 
 ### 이미지
 
-기본 제공되는 이미지에는 JEUS8Fix1 (Domain Administrator Server) with CentOS 7.8, JEUS8Fix1 (Managed Server) with CentOS 7.8 이 포함됩니다.
-Domain Administrator Server를 설치하기 위해서는 JEUS8Fix1 (Domain Administrator Server) with CentOS 7.8 이미지를 사용합니다.
+기본 제공되는 이미지에는 JEUS8Fix1(Domain Administrator Server) with CentOS 7.8, JEUS8Fix1(Managed Server) with CentOS 7.8이 포함됩니다.
+Domain Administrator Server를 설치하기 위해서는 JEUS8Fix1(Domain Administrator Server) with CentOS 7.8 이미지를 사용합니다.
 Managed Server를 설치하기 위해서는 JEUS8Fix1 (Managed Server) with CentOS 7.8 이미지를 사용합니다.
 
 ![image.png](http://static.toastoven.net/prod_jeus_instance/jeus_image2.png)
@@ -20,13 +21,13 @@ Managed Server를 설치하기 위해서는 JEUS8Fix1 (Managed Server) with Cent
 ### 인스턴스 정보
 
 * 가용성 영역: 임의의 가용성 영역 선택
-* 인스턴스 이름:생성되는 서버의 인스턴스 이름
+* 인스턴스 이름: 생성되는 서버의 인스턴스 이름
 * 인스턴스 타입
     * 원하는 타입 모두 선택가능함
-* 키페어: PEM 키를 새로 생성하거나 기존 키를 사용. 새로 생성하는 경우 다운로드하여 보관
+* 키 페어: PEM 키를 새로 생성하거나 기존 키를 사용, 새로 생성하는 경우 다운로드하여 보관
 * 블록 스토리지 타입
-    * root 볼륨. 빠른 속도를 위해 SSD를 권장
-    * root Full이 발생하지 않도록 최소 50GB 이상 설정
+    * root 볼륨, 빠른 속도를 위해 SSD를 권장
+    * root full이 발생하지 않도록 최소 50GB 이상 설정
 
 ![image.png](http://static.toastoven.net/prod_jeus_instance/jeus_image3.png)
 
@@ -58,7 +59,7 @@ SSH 접속을 위해 플로팅 IP를 사용합니다.
 
 ![image.png](http://static.toastoven.net/prod_jeus_instance/jeus_image9.png)
 
-JEUS 는 ~/apps/jeus8에 설치됩니다.
+JEUS 는 `~/apps/jeus8에 설치됩니다.
 
 설치 시 아래 속성들로 설정됩니다.
 
@@ -93,7 +94,7 @@ SSH 연결에 대한 자세한 가이드는[SSH 연결 가이드](https://docs.t
 
 ### JEUS 기동
 
-Domain Administrator Server 는 startDomainAdminServer 명령어로 실행합니다.
+Domain Administrator Server는 startDomainAdminServer 명령어로 실행합니다.
 
 ```
 startDomainAdminServer -uadministrator -pjeusadmin
