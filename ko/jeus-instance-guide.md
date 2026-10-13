@@ -85,7 +85,7 @@ JEUS를 설정하거나 제어하려면 노드 매니저를 기동한 후 WebAdm
 ![image.png](http://static.toastoven.net/prod_jeus_instance/jeus_image10.png)
 
 SSH 클라이언트와 설정한 키페어를 이용해 인스턴스에 접속합니다.
-SSH 연결에 대한 자세한 가이드는[SSH 연결 가이드](https://docs.toast.com/ko/Compute/Instance/ko/overview/#linux)<span style="color:#313338">를 참고하시기 바랍니다.</span>
+SSH 연결에 대한 자세한 가이드는[SSH 연결 가이드](https://docs.nhncloud.com/ko/Compute/Instance/ko/overview/#linux)<span style="color:#313338">를 참고하시기 바랍니다.</span>
 
 ### 노드 매니저 기동
 
